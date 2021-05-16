@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Gracias...</title>
+	<title>Hola</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/script.js"></script>
+	<!--Fuente-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
 </head>
 <body>
 	<header><h1>Titulo</h1></header>
 	<section id="principal">
-
 		<div id="contenido">
-        <h2>Selecciona el tema de tu interes</h2>
-        <button class="botones"><a>¿Que es el amor?</a></button>
-        <button class="botones">Dejar de extrañar</button>
-        <button class="botones">La ansiedad</button>
-        <button class="botones">Falta de Motivacion</button>
-        <button class="botones">Tema5</button>
-		<h3 id="frase-txt" style="text-align: center;">¿Ya pagaste?</h3>
-		<button id="btn-frase" onclick="iniciar();">Click</button>
+        <h2>--Tema de tu interes--</h2>
+		<div class="box-btn-grid">
+        <button class="boton" id="fraAmor" onclick="mostrarAmor();">¿Que es el amor?</button>
+        <button class="boton" id="fraExtra" onclick="mostrarExtrañar();">Dejar de extrañar</button>
+        <button class="boton" id="fraAnsi" onclick="mostrarAnsiedad();">La ansiedad</button>
+        <button class="boton" id="fraMoti" onclick="mostrarMotivacion();">Falta de Motivacion</button>
+        <button class="boton" id="fraFilo" onclick="mostrarFilosofia();">Filosofia</button>
+		<button class="boton" id="fraMate" onclick="mostrarMatematicas();">Dato Matematico</button>
+	</div>
+		<h3 id="frase-txt" style="text-align: center;">Da Click...</h3>
+		<!--<button id="btn-frase" onclick="iniciar();">Click</button>-->
 	</div>
 	</section>
+	<footer><h1>&copy;BAVT</h1></footer>
 </body>
 </html>
